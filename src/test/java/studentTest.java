@@ -31,11 +31,6 @@ public class studentTest {
     }
 
     @org.junit.Test
-    public void absent() {
-        Student std = new Student();
-        assertEquals(Student.AttendanceGrade.ABSENT, std.getAttendanceGrade(0));
-    }
-    @org.junit.Test
     public void lowVeryPoor() {
         Student std = new Student();
         assertEquals(Student.AttendanceGrade.VERY_POOR, std.getAttendanceGrade(1));

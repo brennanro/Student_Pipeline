@@ -3,9 +3,7 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
 /**
- * 
  * Created by meudecc on 15/02/2017.
- *
  */
 public class studentTest {
     @org.junit.Test(expected = IllegalArgumentException.class)
@@ -32,13 +30,11 @@ public class studentTest {
         std.getAttendanceGrade(142);
     }
 
-      @org.junit.Test
+    @org.junit.Test
     public void absent() {
         Student std = new Student();
         assertEquals(Student.AttendanceGrade.ABSENT, std.getAttendanceGrade(0));
     }
-
-   
     @org.junit.Test
     public void lowVeryPoor() {
         Student std = new Student();

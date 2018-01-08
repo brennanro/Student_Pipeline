@@ -1,7 +1,7 @@
 
 public class Student 
 {
-	 public enum AttendanceGrade {VERY_POOR, AVERAGE, GOOD, VERY_GOOD};
+	 public enum AttendanceGrade {ABSENT,VERY_POOR, AVERAGE, GOOD, VERY_GOOD};
 
 	    public AttendanceGrade getAttendanceGrade(int attendance) {
 	        if (attendance < 0 || attendance > 100) throw new IllegalArgumentException();
